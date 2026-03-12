@@ -3,8 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List, Optional
-from backend.agents.orchestrator import run_full_analysis
-from backend.models.schemas import (
+
+from agents.orchestrator import run_full_analysis
+from models.schemas import (
     UploadResponse,
     AnalyzeRequest,
     AnalyzeResponse,
