@@ -1,0 +1,16 @@
+fastapi==0.111.0
+uvicorn==0.30.1
+pydantic==2.7.4
+python-multipart==0.0.9
+jinja2==3.1.4
+reportlab==4.2.2
+
+# Optional ML deps for production
+# torch
+# transformers
+# pytesseract
+# pdf2image
+# sentence-transformers
+# faiss-cpu
+# neo4j
+# shap
