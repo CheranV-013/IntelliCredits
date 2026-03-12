@@ -1,12 +1,11 @@
 from typing import Dict, Any
-from backend.models.schemas import AnalyzeRequest
-from backend.document_ai.extractor import extract_financials
-from backend.research.agent import run_research
-from backend.graph.graph_service import compute_graph_risk
-from backend.risk_engine.trend_model import compute_trend_risk
-from backend.risk_engine.scoring import score_credit
-from backend.cam_generator.generator import generate_cam_pdf
-
+from models.schemas import AnalyzeRequest
+from document_ai.extractor import extract_financials
+from research.agent import run_research
+from graph.graph_service import compute_graph_risk
+from risk_engine.trend_model import compute_trend_risk
+from risk_engine.scoring import score_credit
+from cam_generator.generator import generate_cam_pdf
 
 def run_full_analysis(payload: AnalyzeRequest) -> Dict[str, Any]:
     financials = extract_financials(payload.document_paths)
